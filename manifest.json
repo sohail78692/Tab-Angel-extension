@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Angel – Smart Tab Organizer",
+  "description": "Automatically organize tabs, boost performance, and search across all tabs with a beautiful visual UI.",
+  "version": "1.0.0",
+  "permissions": [
+    "tabs",
+    "tabGroups",
+    "storage",
+    "sessions"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Tab Angel",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "commands": {
+    "open_tab_angel": {
+      "suggested_key": {
+        "default": "Alt+Shift+A"
+      },
+      "description": "Open Tab Angel popup"
+    }
+  }
+}

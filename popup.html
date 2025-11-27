@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tab Angel</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="header">
+      <div class="title-section">
+        <h1>Tab Angel</h1>
+        <span class="subtitle">Smart tab organizer & booster</span>
+      </div>
+      <div class="stats" id="stats">
+        <span id="totalTabs">0 tabs</span>
+        <span id="groupedTabs">0 grouped</span>
+      </div>
+    </header>
+
+    <section class="controls">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search tabs by title or URL..."
+        autocomplete="off"
+      />
+      <div class="buttons-row">
+        <button id="groupTabsBtn">📂 Auto Group Tabs</button>
+        <button id="boosterBtn">🚀 Performance Booster</button>
+      </div>
+      <div class="buttons-row secondary">
+        <button id="closeDupesBtn">🔁 Close Duplicates</button>
+        <button id="discardIdleBtn">😴 Discard Idle Tabs</button>
+      </div>
+    </section>
+
+    <section class="hint" id="hint">
+      <span>💡 Tip: Press <b>Alt + Shift + A</b> to open Tab Angel quickly.</span>
+    </section>
+
+    <section class="tab-grid" id="tabGrid">
+      <!-- Tabs will be rendered here -->
+    </section>
+
+    <footer class="footer">
+      <span id="suggestionText">Analyzing tabs...</span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
